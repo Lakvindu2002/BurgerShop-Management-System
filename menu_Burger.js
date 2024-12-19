@@ -172,7 +172,7 @@ function displayProducts() {
   const container = document.getElementById("product-container");
   container.innerHTML = ""; 
 
-  const storedBurgers = JSON.parse(localStorage.getItem("newBurger")) || [];
+  const storedBurgers = localStorage.getItem("newBurger") || [];
   [...products, ...storedBurgers].forEach((product) => {
     const productCard = document.createElement("div");
     productCard.classList.add("item");
@@ -186,9 +186,7 @@ function displayProducts() {
       }</div>
       <div class="portion">${product.portion}</div>
       <div class="price">Rs.${product.price}</div>
-      <button class="addCart" onclick="addToCart('${
-        product.id
-      }')">Add to Cart</button>`;
+      <button class="addCart" onclick="addToCart('${product.id}')">Add to Cart</button>`;
     container.appendChild(productCard);
   });
 

@@ -134,7 +134,7 @@ let items = [
   ];
   
   function loadTable() {
-    console.log(items);
+    
   
     let tblBody = document.getElementById("tblBody");
     let body = ``;
@@ -172,8 +172,8 @@ let items = [
   loadTable();
   
   function addItem() {
-    let itemId = document.getElementById("ItemId").value.trim();
-    let itemName = document.getElementById("ItemName").value.trim();
+    let itemId = document.getElementById("ItemId").value;
+    let itemName = document.getElementById("ItemName").value;
     let itemPrice = parseFloat(document.getElementById("ItemPrice").value);
     let itemImageInput = document.getElementById("Itemimage").files[0];
   

@@ -41,7 +41,7 @@ function updateCustomerList() {
         const li = document.createElement('li');
         li.innerHTML = `
             <span>${customer.id} - ${customer.name} - ${customer.address} - ${customer.contact}</span>
-            <button class="place-order-btn" onclick="placeOrder(${index})"><i class="fa fa-shopping-cart"></i> Place Order</button>
+            <button class="place-order-btn" onclick="placeOrder(${index})"> Place Order</button>
             <button class="edit-btn" onclick="editCustomer(${index})">Edit</button>
             <button class="delete-btn" onclick="deleteCustomer(${index})">Delete</button>
         `;

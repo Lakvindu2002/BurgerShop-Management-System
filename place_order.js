@@ -1,11 +1,9 @@
-document
-  .getElementById("itemForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("itemForm").addEventListener("submit", function (event) {
     event.preventDefault();
     OderPlace();
   });
 
-console.log("its been reloaeded");
+
 
 let items = [
   {
