@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Menu.css" >
+
+    <style>
+       body {
+        background-color: #2f3542;
+        font-family: 'Poppins', sans-serif;
+        color: #f5f6fa;
+        margin: 0;
+        padding: 0;
+      }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col m-2">
+          <div class="add-item-card">
+            <h1 class="fw-bold text-center">Add Item</h1>
+            <form id="itemForm">
+              <div class="form-group">
+                <label for="ItemId" class="form-label">Item ID</label>
+                <input type="text" id="ItemId" class="form-control item-input" placeholder="Enter Item ID">
+              </div>
+
+              <div class="form-group">
+                <label for="ItemName" class="form-label">Item Name</label>
+                <input type="text" id="ItemName" class="form-control item-input" placeholder="Enter Item Name">
+              </div>
+
+              <div class="form-group">
+                <label for="ItemPrice" class="form-label">Price</label>
+                <input type="text" id="ItemPrice" class="form-control item-input" placeholder="Enter Price">
+              </div>
+
+              <div class="form-group">
+                <label for="Itemimage" class="form-label">Item Image</label>
+                <input type="file" class="form-control item-input" id="Itemimage" name="image" accept="image/*" required>
+              </div>
+
+              <button type="submit" class="btn add-item-btn btn btn-success mt-2" onclick="addItem()">Add Item</button>
+            </form>
+          </div>
+        </div>
+
+       
+        <div class="col m-2">
+          <div class="item-list-card">
+            <h1 class="fw-bold text-center">Item List</h1>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search by name...">
+            <div class="overFlowItem">
+              <table class="table table-bordered table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="tblBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="addItem.js"></script>
+    <script src="menu_Burger.js"></script>
+    <script src="menu_Submarine.js"></script>
+    <script src="menu_Chicken.js"></script>
+    <script src="menu_Fries.js"></script>
+    <script src="menu_Pasta.js"></script>
+    <script src="menu_Beverages.js"></script>
+
+  </body>
+</html>

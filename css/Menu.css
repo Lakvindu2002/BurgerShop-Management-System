@@ -1,0 +1,390 @@
+
+    /* menu burger */
+   
+
+    
+    .navbar {
+        background-color: #1c1c1c; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar .nav-link {
+        color: #ffd700; 
+        font-weight: bold;
+    }
+
+    .navbar .nav-link:hover {
+        color: #ff6347; 
+    }
+
+    .navbar .logo1 {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .navbar .logo-cart {
+        width: 30px;
+        margin-left: 15px;
+    }
+
+    .logo-cart-count {
+        display: inline-block;
+        background-color: #ff6347;
+        border-radius: 50%;
+        padding: 5px 10px;
+        margin-left: 5px;
+        color: white;
+    }
+
+   
+    .header-button .btn {
+        width: 120px;
+        margin: 5px;
+        border-radius: 30px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .header-button .btn-danger {
+        background-color: #ff6347;
+        color: white;
+        border: 1px solid #ffd700;
+    }
+
+    .header-button .btn-outline-danger {
+        border-color: #ff6347; 
+        color: #ffd700; 
+    }
+
+    .header-button .btn:hover {
+        transform: scale(1.05);
+    }
+
+    /* Product List */
+    .listProduct .item {
+        background-color: #1c1c1c; 
+        border: 1px solid #ffd700; 
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+        padding: 15px;
+        color: white;
+    }
+
+    .listProduct .item:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+    }
+
+  
+    .fixed-card .card {
+        background-color: #1c1c1c; 
+        border: 1px solid #ffd700; 
+        color: white;
+        border-radius: 10px;
+    }
+
+    .fixed-card .btn-red {
+        background-color: #ff6347;
+        color: white;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .fixed-card .btn-red:hover {
+        background-color: #ffd700;
+        color: black;
+    }
+
+    
+    #toastBox {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1050;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    @media (max-width: 768px) {
+        .header-button .btn {
+            width: 100px;
+            font-size: 14px;
+        }
+
+        .fixed-card {
+            margin-top: 20px;
+        }
+    }
+
+  
+  .Addcards {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  
+  .wrapper {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Inputs */
+  input.form-control {
+    border: 2px solid #ffd32a; 
+    border-radius: 8px;
+  }
+  
+  input.form-control:focus {
+    border-color: #c6ee24; 
+    box-shadow: 0 0 8px rgba(238, 90, 36, 0.5);
+  }
+  
+  /* Buttons */
+  .btn-success {
+    background-color: #10ac84;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-success:hover {
+    background-color: #1dd1a1;
+    transform: scale(1.05);
+  }
+  
+  .table .btn-danger {
+    background-color: #ffd700;
+    border: none;
+  }
+  
+  .table .btn-danger:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Table  */
+  .table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .table thead {
+    background-color: #1e272e; 
+    color: white;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f2f6;
+    cursor: pointer;
+  }
+  
+  .overFlowItem {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  
+  .overFlowItem::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .overFlowItem::-webkit-scrollbar-thumb {
+    background-color: #ffd700;
+    border-radius: 10px;
+  }
+  
+  /* Placed Orders  */
+  #placeOder {
+    padding: 20px;
+  }
+  
+  #placeOder .table th {
+    background-color: #57606f;
+  }
+  
+  #placeOder .table td {
+    font-size: 14px;
+  }
+  
+  #placeOder .btn-danger {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .Addcards, .wrapper {
+      margin: 10px;
+    }
+  
+    .overFlowItem {
+      max-height: 200px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+
+  /* addItem */
+
+  
+
+  .container {
+    padding-top: 50px;
+  }
+
+  .add-item-card {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .add-item-card h1 {
+    font-size: 32px;
+    color: #ffd32a;
+    margin-bottom: 30px;
+  }
+
+  .item-input {
+    background-color: #444;
+    color: #f5f6fa;
+    border: 2px solid #ffd32a;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .item-input:focus {
+    border-color: #1dd1a1;
+    box-shadow: 0 0 8px rgba(29, 209, 161, 0.6);
+  }
+
+  .form-label {
+    font-size: 16px;
+    color: #f5f6fa;
+  }
+
+  .add-item-btn {
+    background-color: #10ac84;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+
+  .add-item-btn:hover {
+    background-color: #1dd1a1;
+    transform: scale(1.05);
+  }
+
+  .item-list-card {
+    background-color: #444;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+  }
+
+  .item-list-card h1 {
+    color: #ffd32a;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .overFlowItem {
+    overflow-x: auto;
+  }
+
+  .table {
+    background-color: #222;
+    color: #f5f6fa;
+    border-radius: 8px;
+  }
+
+  .table th, .table td {
+    color: #f5f6fa;
+  }
+
+  .table thead {
+    background-color: #444;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #1dd1a1;
+    color: #fff;
+  }
+
+  .search-bar {
+    width: 100%; 
+    max-width: 600px;
+    background-color: #333; 
+    border: 2px solid #1dd1a1;
+    border-radius: 8px; 
+    padding: 12px 16px; 
+    color: #f5f6fa; 
+    font-size: 16px; 
+    margin: 0 auto 30px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.search-bar:focus {
+    border-color: #ffd32a; 
+    box-shadow: 0 0 8px rgba(29, 209, 161, 0.6); 
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        max-width: 100%; 
+        padding: 10px 14px;
+    }
+}
+
+
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 20px;
+    }
+
+    .add-item-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+
+    .add-item-card h1 {
+      font-size: 28px;
+    }
+
+    .item-input {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .add-item-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

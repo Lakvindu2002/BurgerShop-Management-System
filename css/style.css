@@ -1,0 +1,1041 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Home Page Styles */
+
+   .home_page_body {
+    background: url("../img/backk.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.col01-row01-home {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.col01-row01-home img {
+    width: 160px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#p1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD700; 
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#p2 {
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*  Inputs */
+#username,
+#password {
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    margin-left: 20px;
+    margin: 10px 0;
+    border: 2px solid #FFD700; 
+    border-radius: 5px;
+    background-color: #333; 
+    color: white;
+    font-size: 16px;
+    outline: none;
+    display: block;
+    text-align: center;
+}
+
+#username:focus,
+#password:focus {
+    border-color: #FF4500; 
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+/* Button  */
+.btn-warning {
+    width: 250px;
+    height: 40px;
+    background-color: #333; 
+    color: white;
+    border: 2px solid #b11111; 
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #b11111; 
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    #p1 {
+        font-size: 36px;
+    }
+
+    #p2 {
+        font-size: 18px;
+    }
+
+    #username,
+    #password,
+    .btn-warning {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #p1 {
+        font-size: 28px;
+    }
+
+    #p2 {
+        font-size: 16px;
+    }
+
+    #username,
+    #password,
+    .btn-warning {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+
+/* Add Customer Page */
+.add_customer_form {
+    background-color: #F3C712;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.add_cust_row1 img {
+    width: 150px;
+    margin: 10px;
+}
+
+.add_cust_row1 p {
+    font-family: "Jaldi", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#imgYellowFram {
+    background: rgba(145, 117, 8, 0.3);
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+
+label {
+    font-family: "Jaldi", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btnAdd {
+    background-color: black;
+    color: white;
+    border: 3px solid #BE9A0A;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnAdd:hover {
+    background-color: #BE9A0A;
+    color: black;
+}
+
+
+/*-----------------------------ADMIN INTERFACE PAGE CSS-------------------------------------*/
+#btnReportManagement{
+    border-color: #C62828 ;
+    color:white;
+    font-size: larger;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    width: 250px;
+    height: 53px;
+    left: 530px;
+    top: 445px;
+}
+
+#lblAdmin{
+    position: absolute;
+    width: 265px;
+    height: 81px;
+    left: 560px;
+    margin-top: 3%;
+
+    color: #C0C0C0;
+    font-size: 100px;
+    font-family: "Ga Maamli", sans-serif;
+    font-style: normal;
+}
+
+/*-----------------------------CUSTOMER MANAGEMENT PAGE CSS-------------------------------------*/
+.customer_management_dash_board{
+    
+    width: 1350px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+.cust_manage_row1 img {
+position: absolute;
+width: 146px;
+height: 66px;
+left: 10px;
+top: 1px;
+}
+
+.cust_manage_row1 p {
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    left: 466px;
+    
+
+    font-family: "Jaldi", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 81px;
+
+    color: #FFFFFF;
+    font-weight: bold; 
+    text-shadow:-1px -1px 0 red,  
+                1px 1px 0 red,
+                1px  1px 0 red,
+                -2px  -2px 0 red;
+}
+
+#imgBlackFram{
+    /* Rectangle 11 */
+
+position: absolute;
+width: 370px;
+height: 380px;
+left: 550px;
+top: 170px;
+
+background: rgba(0, 0, 0, 0.5);
+opacity: 0.6;
+}
+
+#btnAddCustomer{
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    left: 630px;
+    top: 220px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnViewCustomer{
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    left: 630px;
+    top: 280px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnUpdateCustomer{
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    left: 630px;
+    top: 340px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnDeleteCustomer{
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    left: 630px;
+    top: 400px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnHistoryCustomer{
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    left: 630px;
+    top: 460px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/*-----------------------------ADD CUSTOMER PAGE CSS-------------------------------------*/
+.add_customer_form{
+    background-image: url(custom_manage/cust\ manage.png);
+    width: 1350px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.add_cust_row1 img {
+    position: absolute;
+    width: 146px;
+    height: 66px;
+    left: 10px;
+    top: 1px;
+}
+
+.add_cust_row1 p {
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    left: 466px;
+    
+
+    font-family: "Jaldi", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 5px;
+
+    color: #000000;
+    font-weight: bold; 
+    text-shadow:-1px -1px 0 #F3C712, 
+                1px 1px 0 #F3C712,
+                1px  1px 0 #F3C712,
+                -2px  -2px 0 #F3C712;
+}
+
+#imgYellowFram{
+    position: absolute;
+    width: 1200px;
+    height: 340px;
+    left: 70px;
+    top: 170px;
+
+    background: rgba(145, 117, 8, 0.3);
+    opacity: 0.4;
+    }
+
+#lblCustId{
+    /* Customer ID */
+
+position: absolute;
+width: 100%;
+height: 40px;
+left: 100px;
+top: 183px;
+
+font-family: 'Jaldi';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 41px;
+
+color: #010101;
+
+text-shadow:-1px -1px 0 #ffffff, 
+            -1px -1px 0 #ffffff,
+            -1px  -1px 0 #ffffff,
+            1px  1px 0 #ffffff;
+
+}
+
+#txtCustId{
+    position: absolute;
+    width: 110px;
+    height: 27px;
+    left: 440px;
+    top: 220px;
+}
+
+#lblCustName{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 100px;
+    top: 260px;
+
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+
+    color: #010101;
+
+    text-shadow:-1px -1px 0 #ffffff, 
+                -1px -1px 0 #ffffff,
+                -1px  -1px 0 #ffffff,
+                1px  1px 0 #ffffff;
+}
+
+#txtCustName{
+    position: absolute;
+    width: 600px;
+    height: 27px;
+    left: 440px;
+    top: 300px;
+}
+
+#lblCustEmail{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 100px;
+    top: 337px;
+
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+
+    color: #010101;
+
+    text-shadow:-1px -1px 0 #ffffff, 
+                -1px -1px 0 #ffffff,
+                -1px  -1px 0 #ffffff,
+                1px  1px 0 #ffffff;
+}
+#txtCustEmail{
+    position: absolute;
+    width: 600px;
+    height: 27px;
+    left: 440px;
+    top: 380px;
+}
+
+#lblCustTeleNo{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 100px;
+    top: 414px;
+
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+
+    color: #010101;
+
+    text-shadow:-1px -1px 0 #ffffff, 
+                -1px -1px 0 #ffffff,
+                -1px  -1px 0 #ffffff,
+                1px  1px 0 #ffffff;
+}
+
+#txtCustTeleNo{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 440px;
+    top: 460px;
+}
+
+#btnAdd{
+    /* Rectangle 28 */
+
+/* box-sizing: border-box; */
+
+position: absolute;
+width: 100px;
+height: 35px;
+left: 1000px;
+top: 520px;
+
+background: #000000;
+border: 3px solid #BE9A0A;
+border-radius: 5px;
+
+color: #ffffff;
+font-weight: bold;
+font-size: large;
+}
+
+
+/*-----------------------------ORDER MANAGEMENT PAGE CSS-------------------------------------*/
+
+.order_management_dash_board{
+    background-image: url("order_manage/order_cover.png");
+    width: 1350px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.order_manage_row1 img {
+position: absolute;
+width: 146px;
+height: 66px;
+left: 10px;
+top: 1px;
+}
+
+.order_manage_row1 p {
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    left: 600px;
+    
+
+    font-family: "Jaldi", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 81px;
+
+    color: #FFFFFF;
+    font-weight: bold; 
+    text-shadow:-1px -1px 0 red,  
+                1px 1px 0 red,
+                1px  1px 0 red,
+                -2px  -2px 0 red;
+}
+
+#imgWhiteFram{
+    /* Rectangle 11 */
+
+position: absolute;
+width: 370px;
+height: 280px;
+left: 650px;
+top: 180px;
+
+background: rgba(0, 0, 0, 0.5);
+opacity: 0.1;
+}
+
+#btnNewCustomer{
+    position: absolute;
+    width: 330px;
+    height: 37px;
+    left: 670px;
+    top: 230px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnMemberCustomer{
+    position: absolute;
+    width: 330px;
+    height: 37px;
+    left: 670px;
+    top: 300px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#btnOrderListCustomer{
+    position: absolute;
+    width: 330px;
+    height: 37px;
+    left: 670px;
+    top: 370px;
+    
+    background: #DDB40E;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Customer Management */
+/*
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-form {
+    position: absolute;
+    top: 140px;
+    width: 45%;
+    height: 350px;
+    background-color: #000000;
+    opacity: 0.7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-list{
+    position: absolute;
+    top: 130px;
+    width: 45%;
+    height: 400px;
+    left: 700px;
+    background-color: #000000;
+    opacity: 0.7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#CustManageBody {
+    font-family: Arial, sans-serif;
+    background-image: url("custom_manage/cust\ manage.png");
+    margin: 0;
+    padding: 20px;
+}
+#customerId{
+    color: rgba(8, 8, 8, 0.904);
+}
+
+#lblCustomerManagement{
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    left: 450px;
+    bottom: 70%;
+    
+    font-family: "Jaldi", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 81px;
+    
+    color: #FFFFFF;
+    font-weight: bold; 
+    text-shadow:-1px -1px 0 #0d0ad4,  
+                1px 1px 0 #0d0ad4,
+                1px  1px 0 #0d0ad4,
+                -2px  -2px 0 #0d0ad4;
+}
+
+
+
+
+#lblAddCustomerForm{
+    color: #3742fa;
+    text-shadow:-1px -1px 0 rgb(255, 255, 255),  
+    1px 1px 0 rgb(255, 255, 255),
+    1px  1px 0 rgb(255, 255, 255),
+    -2px  -2px 0 rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    left: 190px;
+    bottom: 90%;
+}
+
+#lblCustomerListForm{
+    color: #3742fa;
+    text-shadow:-1px -1px 0 rgb(255, 255, 255),  
+    1px 1px 0 rgb(255, 255, 255),
+    1px  1px 0 rgb(255, 255, 255),
+    -2px  -2px 0 rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    left: 190px;
+    bottom: 90%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 23px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0d0ad4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+button:hover {
+    background-color: #3742fa;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffa500;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff3333;
+    color: white;
+}
+
+.place-order-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.place-order-btn i {
+    margin-right: 5px;
+}
+
+
+*/
+
+/* add_Customer */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* Customer Form and List */
+.customer-form,
+.customer-list {
+    width: 90%;
+    max-width: 450px;
+    background-color: rgba(33, 33, 33, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #FFD700;
+}
+
+.customer-form h2,
+.customer-list h2 {
+    color: #FF4500; 
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #FFFFFF; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FF6347; 
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    background-color: #2c2c2c; 
+    color: #FFD700; 
+}
+
+input:focus {
+    border-color: #FF4500; 
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4500; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #FFD700; 
+    color: #333;
+    transform: scale(1.05);
+}
+
+/* List Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2c2c; 
+    color: #FFFFFF; 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #FFA500; 
+    color: white;
+}
+
+.delete-btn {
+    background-color: #FF3333; 
+    color: white;
+}
+
+.place-order-btn {
+    background-color: #32CD32; 
+    color: white;
+}
+
+.place-order-btn i {
+    margin-right: 5px;
+}
+
+/* Body Styles */
+#CustManageBody {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark theme background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Heading */
+#lblCustomerManagement {
+    text-align: center;
+    font-family: "Jaldi", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFD700; 
+    text-shadow: -1px -1px 0 #FF4500,  
+                 1px 1px 0 #FF4500,
+                 1px 1px 0 #FF4500,
+                 -2px -2px 0 #FF4500;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .customer-form,
+    .customer-list {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #lblCustomerManagement {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    .customer-form h2,
+    .customer-list h2 {
+        font-size: 20px;
+    }
+}

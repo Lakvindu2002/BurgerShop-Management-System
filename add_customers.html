@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body bgcolor="orange" id="CustManageBody">
+
+    <p id="lblCustomerManagement">Customer Management</p>
+    <div class="container">
+        <div class="customer-form">
+            <h2 id="lblAddCustomerForm">Add Customer</h2>
+            <form id="customerForm">
+                <label for="customerId">Customer ID:</label>
+                <input type="text" id="customerId" placeholder="Enter Customer ID" required><br>
+                
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" placeholder="Enter Customer Name" required><br>
+                
+                <label for="customerAddress">Customer Address:</label>
+                <input type="text" id="customerAddress" placeholder="Enter Customer Address" required><br>
+                
+                <label for="customerContact">Customer Contact Number:</label>
+                <input type="text" id="customerContact" placeholder="Enter Contact Number" required><br>
+                
+                <button type="submit">Add Customer</button>
+            </form>
+        </div>
+
+        <div class="customer-list">
+            <h2 id="lblCustomerListForm">Customer List</h2>
+            <ul id="customerList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="add_customers.js"></script>
+</body>
+</html>
